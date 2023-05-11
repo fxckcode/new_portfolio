@@ -1,0 +1,35 @@
+.contain {
+    width: 100%;
+    height: calc(100vh - 84px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+
+    & > div {
+        text-align: center;
+        margin: 10% 0 0 0;
+    }
+
+    & > div > h1 {
+        font-size: 4em;
+        color: white;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+
+    & > div > div > span {
+        font-size: 2em;
+        color: white;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .contain > div > h1 {
+        font-size: 3em;
+    }
+}
