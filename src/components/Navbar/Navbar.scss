@@ -39,6 +39,7 @@ ul > li > a {
         justify-content: center;
         padding: 0 10%;
         transition: background-color 1s ease;
+        box-shadow: 1em 1em 2em 2em rgba($color: #000000, $alpha: 0.3);
     }
 
     nav > ul.close {
