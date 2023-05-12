@@ -3,7 +3,7 @@ import './Hero.scss'
 
 function Hero() {
   return (
-    <div className="contain flex flex-col">
+    <div className="contain flex flex-col" id="hero">
         <div>
             <h1>Hi! I'm Diego 👋</h1>
             <div>

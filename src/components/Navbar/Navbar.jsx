@@ -5,11 +5,11 @@ import axios from 'axios'
 function Navbar() {
     const [isOpen, setIsOpen] = useState(true);
     return (
-        <nav className='flex justify-around w-full p-5 items-center text-white'>
+        <nav className='flex justify-around w-full p-5 items-center text-white fixed z-[2]'>
             <i class="fa-solid fa-bars sm:hidden text-xl relative z-10" onClick={() => setIsOpen(!isOpen)}></i>
-            <a href="/" className='logo'>FxckCode</a>
+            <a href="#hero" className='logo'>FxckCode</a>
             <ul className={`gap-5 ${isOpen ? "close" : "open"} sm:flex`}>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" onClick={() => setIsOpen(!isOpen)}>About</a></li>
                 <li><a href="#portafolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
