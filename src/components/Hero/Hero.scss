@@ -1,6 +1,6 @@
 .contain {
     width: 100%;
-    height: calc(100vh - 84px);
+    height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -29,7 +29,13 @@
 }
 
 @media (max-width: 640px) {
+    .contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .contain > div > h1 {
-        font-size: 3em;
+        font-size: 2.4em;
     }
 }

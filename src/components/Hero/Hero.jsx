@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="contain flex flex-col" id="hero">
         <div>
-            <h1>Hi! I'm Diego 👋</h1>
+            <h1 className='headline'>Hi! I'm Diego 👋</h1>
             <div>
               <span className='multiText'></span>
             </div>
