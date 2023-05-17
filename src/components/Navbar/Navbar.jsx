@@ -6,8 +6,10 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(true);
     return (
         <nav className='flex justify-around w-full p-5 items-center text-white fixed z-[2]'>
-            <i class="fa-solid fa-bars sm:hidden text-xl relative z-10" onClick={() => setIsOpen(!isOpen)}></i>
-            <a href="#hero" className='logo'>FxckCode</a>
+            <i className="fa-solid fa-bars sm:hidden text-xl relative z-10" onClick={() => setIsOpen(!isOpen)}></i>
+            <a href="#hero" className='logo'>
+                <img src="logo.svg" alt=""  width={100} height={100}/>
+            </a>
             <ul className={`gap-5 ${isOpen ? "close" : "open"} sm:flex`}>
                 <li><a href="#about" onClick={() => setIsOpen(!isOpen)}>About</a></li>
                 <li><a href="#portafolio">Portfolio</a></li>
